@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".ui.MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:backgroundTint="#00BFA5"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClickFABNuevaTarea"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.94"
+        app:srcCompat="@drawable/add" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/tamano_boton_toolbar"
+                android:layout_height="@dimen/tamano_boton_toolbar"
+                android:background="@null"
+                android:onClick="onClickToolbarSalir"
+                android:padding="6dp"
+                android:src="@drawable/cursor" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/imageButton"
+                android:layout_width="@dimen/tamano_boton_toolbar"
+                android:layout_height="@dimen/tamano_boton_toolbar"
+                android:background="@null"
+                android:onClick="onClickToolbarModificar"
+                android:padding="6dp"
+                android:src="@drawable/pencil" />
+
+            <ImageView
+                android:id="@+id/imageButton2"
+                android:layout_width="@dimen/tamano_boton_toolbar"
+                android:layout_height="@dimen/tamano_boton_toolbar"
+                android:background="@null"
+                android:onClick="onClickToolbarEliminar"
+                android:padding="6dp"
+                android:src="@drawable/cancel" />
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewTareas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/hex_000097_png_625x385_q100"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

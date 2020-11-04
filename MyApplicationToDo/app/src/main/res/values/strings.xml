@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Application ToDo</string>
+    <string name="fechaTv">Fecha</string>
+    <string name="edTxtHintTitulo">Escriba aquí el título</string>
+    <string name="tvTitulo">Título de la tarea</string>
+    <string name="tvFechaTarea">Fecha</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="accionCrear_tarea">Crear Tarea</string>
+    <string name="accionEliminarTarea">Eliminar</string>
+    <string name="accionModificarTarea">Modificar</string>
+    <string name="fechaTareaHint">Fecha</string>
+    <string name="fechaTarea">Fecha</string>
+    <string name="titulo_tarea_nueva">Tarea Nueva</string>
+    <string name="nombre_tarea">Nombre Tarea</string>
+    <string name="hora_tarea">Hora</string>
+    <string name="hora_tareaHint">Hora</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_aceptar">Aceptar</string>
+    <string name="titulo_hora">Hora</string>
+    <string name="titulo_fecha">Fecha</string>
+    <string name="iconoTarea">TODO</string>
+    <string name="tituloTarea_hora">Hora</string>
+    <string name="nom_tareaHint">Nombre Tarea</string>
+    <string name="eliminar_tareas_titulo">Eliminar Tareas</string>
+    <string name="btn_borrar">Borrar</string>
+    <string name="titulo_splash">TextView</string>
+    <string name="myapptodolist">MyAppToDoList</string>
+
+</resources>
